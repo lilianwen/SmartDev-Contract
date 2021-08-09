@@ -22,6 +22,11 @@ contract ShaTest{
         return keccak256(_memory);
     }
 
+    function getRipemd160(bytes memory _memory) public returns(bytes20 result)
+    {
+        return ripemd160(_memory);
+    }
+
     function getData() public view returns(bytes memory)
     {
         return _data;
